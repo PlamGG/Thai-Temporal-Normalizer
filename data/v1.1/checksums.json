@@ -1,0 +1,56 @@
+{
+  "dataset_name": "DuckerMaster/Thai-Natural-DateTime-Dataset",
+  "version": "th-temporal-v1.1.0",
+  "license": "CC-BY-4.0",
+  "total_records": 10000,
+  "seed": 42,
+  "generation_timestamp": "2026-11-08T20:08:25.631207+00:00",
+  "splits": {
+    "train": {
+      "filename": "train.jsonl",
+      "records": 7000,
+      "sha256": "fc1df01f95c3a86541e6de87a2186638b9d19321afc80c48febcf59618ee982a",
+      "size_bytes": 5817882
+    },
+    "dev": {
+      "filename": "dev.jsonl",
+      "records": 1000,
+      "sha256": "1a83193ebd387ab140618eed52441a545e55b9284b3e590f987b4cb3f9185359",
+      "size_bytes": 828970
+    },
+    "test_id": {
+      "filename": "test_id.jsonl",
+      "records": 1000,
+      "sha256": "62a5a30e19ace0ba23271aec8973000b9422b706e7599e80904bb8f1abc6346c",
+      "size_bytes": 837154
+    },
+    "test_ood": {
+      "filename": "test_ood.jsonl",
+      "records": 1000,
+      "sha256": "d3ca2d415160c858496161fb2d22b8b9e56ced5acdbab59d48e69eca9e74dd00",
+      "size_bytes": 837168
+    }
+  },
+  "files": {
+    "train.jsonl": {
+      "records": 7000,
+      "sha256": "fc1df01f95c3a86541e6de87a2186638b9d19321afc80c48febcf59618ee982a",
+      "size_bytes": 5817882
+    },
+    "dev.jsonl": {
+      "records": 1000,
+      "sha256": "1a83193ebd387ab140618eed52441a545e55b9284b3e590f987b4cb3f9185359",
+      "size_bytes": 828970
+    },
+    "test_id.jsonl": {
+      "records": 1000,
+      "sha256": "62a5a30e19ace0ba23271aec8973000b9422b706e7599e80904bb8f1abc6346c",
+      "size_bytes": 837154
+    },
+    "test_ood.jsonl": {
+      "records": 1000,
+      "sha256": "d3ca2d415160c858496161fb2d22b8b9e56ced5acdbab59d48e69eca9e74dd00",
+      "size_bytes": 837168
+    }
+  }
+}

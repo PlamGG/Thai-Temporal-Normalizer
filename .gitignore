@@ -1,0 +1,46 @@
+# Environment & Secrets
+.env
+.env.*
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Build & Packaging Artifacts
+dist/
+build/
+*.egg-info/
+*.whl
+*.tar.gz
+
+# Testing & Linting Caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Heavy Dataset Files (Full 10k dataset is hosted on Hugging Face Hub)
+data/v1.1/*.jsonl
+
+# Internal Technical Documentation & Offline Artifacts (Kept locally only)
+DOCS.md
+*.pdf
+RELEASE_GUIDE.md
+PRD.md
+ERROR_ANALYSIS.md
+CHECKLIST.md
+
+# Release Bundles & HF Cards (Standalone bundles for HF upload only)
+release_bundles/
+hf_cards/
+
+# Model Weights (Hosted on Hugging Face Hub)
+models/
+*.bin
+*.safetensors
+*.pt
+*.onnx

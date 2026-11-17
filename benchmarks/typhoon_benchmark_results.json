@@ -1,0 +1,3923 @@
+{
+  "model": "typhoon-v2.5-30b-a3b-instruct",
+  "total": 150,
+  "correct": 71,
+  "accuracy": 0.47333333333333333,
+  "error_rate": 0.5266666666666666,
+  "latency_mean_ms": 1461.313439999987,
+  "latency_p50_ms": 1124.4905999999446,
+  "latency_p95_ms": 2753.859200000079,
+  "per_category": {
+    "relative_day_week": {
+      "total": 30,
+      "correct": 18,
+      "errors": 12
+    },
+    "thai_6hour_clock": {
+      "total": 30,
+      "correct": 30,
+      "errors": 0
+    },
+    "coarse_time_periods": {
+      "total": 30,
+      "correct": 10,
+      "errors": 20
+    },
+    "short_buddhist_era": {
+      "total": 30,
+      "correct": 6,
+      "errors": 24
+    },
+    "night_date_rollover": {
+      "total": 30,
+      "correct": 7,
+      "errors": 23
+    }
+  },
+  "raw_results": [
+    {
+      "id": 1,
+      "input": "วันนี้",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "วันนี้",
+        "start_char": 0,
+        "end_char": 6,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-08T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 16128.453100000002,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 2,
+      "input": "พรุ่งนี้",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "พรุ่งนี้",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-09T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-09T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1848.7665000001243,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 3,
+      "input": "มะรืนนี้",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "มะรืนนี้",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-10T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-09T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1569.2176000000018,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 4,
+      "input": "เมื่อวาน",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "เมื่อวาน",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-07T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 2215.7554999998865,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 5,
+      "input": "เมื่อวานนี้",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "เมื่อวานนี้",
+        "start_char": 0,
+        "end_char": 11,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-07T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1679.1952999999467,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 6,
+      "input": "วานซืน",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "วานซืน",
+        "start_char": 0,
+        "end_char": 6,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-06T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-06T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1702.4050999998508,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 7,
+      "input": "เมื่อวานซืน",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "เมื่อวานซืน",
+        "start_char": 0,
+        "end_char": 11,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-06T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-06T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1685.6333000000632,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 8,
+      "input": "พุธหน้า",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "พุธหน้า",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-11T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-10T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1612.0368999997936,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 9,
+      "input": "อังคารที่แล้ว",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "อังคารที่แล้ว",
+        "start_char": 0,
+        "end_char": 13,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-03T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-03T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1661.4716999999928,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 10,
+      "input": "ศุกร์นี้",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "ศุกร์นี้",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-13T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-12T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1640.3375000002143,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 11,
+      "input": "จันทร์ที่จะถึงนี้",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "จันทร์ที่จะถึงนี้",
+        "start_char": 0,
+        "end_char": 17,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-09T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-15T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 3207.403599999907,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 12,
+      "input": "พฤหัสหน้า",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "พฤหัสหน้า",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-12T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-11T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1763.7927000000673,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 13,
+      "input": "เสาร์ที่ผ่านมา",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "เสาร์ที่ผ่านมา",
+        "start_char": 0,
+        "end_char": 14,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-07T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1788.978699999916,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 14,
+      "input": "อาทิตย์หน้า",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "อาทิตย์หน้า",
+        "start_char": 0,
+        "end_char": 11,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-15T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2026-11-14T00:00:00+07:00",
+        "range_end": "2026-11-20T23:59:59+07:00"
+      },
+      "latency_ms": 1915.1330999998208,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 15,
+      "input": "เสาร์หน้า",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "เสาร์หน้า",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-14T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-13T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1603.8703000001533,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 16,
+      "input": "พฤหัสที่แล้ว",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "พฤหัสที่แล้ว",
+        "start_char": 0,
+        "end_char": 12,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-05T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-04T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1402.0980000000236,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 17,
+      "input": "ศุกร์ที่แล้ว",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "ศุกร์ที่แล้ว",
+        "start_char": 0,
+        "end_char": 12,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-06T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-06T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1286.512200000061,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 18,
+      "input": "อีก 3 วัน",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "อีก 3 วัน",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-11T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-11T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1332.1505999999772,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 19,
+      "input": "อีก 5 วัน",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "อีก 5 วัน",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-13T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-13T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1179.0006000001085,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 20,
+      "input": "2 วันก่อน",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "2 วันก่อน",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-06T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-06T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1170.1924999999846,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 21,
+      "input": "3 วันที่แล้ว",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "3 วันที่แล้ว",
+        "start_char": 0,
+        "end_char": 12,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-05T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-05T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1172.1699999998236,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 22,
+      "input": "อีก 1 สัปดาห์",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "อีก 1 สัปดาห์",
+        "start_char": 0,
+        "end_char": 13,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-15T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-15T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1237.7438999999413,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 23,
+      "input": "อีกสองวัน",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "อีกสองวัน",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-10T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-10T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1059.434599999804,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 24,
+      "input": "วันจันทร์หน้า",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "วันจันทร์หน้า",
+        "start_char": 0,
+        "end_char": 13,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-16T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-15T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1019.513599999982,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 25,
+      "input": "วันอังคารหน้า",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "วันอังคารหน้า",
+        "start_char": 0,
+        "end_char": 13,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-17T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-16T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1020.5180000000382,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 26,
+      "input": "เจอกันพรุ่งนี้นะ",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "พรุ่งนี้",
+        "start_char": 6,
+        "end_char": 14,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-09T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-09T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 973.2483999998749,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 27,
+      "input": "ส่งรายงานภายในวันมะรืนนี้",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "มะรืนนี้",
+        "start_char": 17,
+        "end_char": 25,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-10T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-10T23:59:59+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 957.2634999999536,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 28,
+      "input": "นัดคุยงานวันพุธหน้า",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "วันพุธหน้า",
+        "start_char": 9,
+        "end_char": 19,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-11T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-17T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1046.9627999998465,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 29,
+      "input": "เคลียร์งานเสร็จตั้งแต่วานซืนแล้ว",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "วานซืน",
+        "start_char": 22,
+        "end_char": 28,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-06T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-06T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 897.5224000000708,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 30,
+      "input": "มีประชุมด่วนวันศุกร์นี้",
+      "category": "relative_day_week",
+      "ground_truth": {
+        "text_span": "วันศุกร์นี้",
+        "start_char": 12,
+        "end_char": 23,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-13T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-12T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1198.3342000000903,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 31,
+      "input": "โมงเช้า",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "โมงเช้า",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T07:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T06:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 804.5968999999786,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 32,
+      "input": "แปดโมงเช้า",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "แปดโมงเช้า",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T08:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T08:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 853.5179999998945,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 33,
+      "input": "เก้าโมง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "เก้าโมง",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T09:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T09:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 852.4985999999899,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 34,
+      "input": "สิบโมงเช้า",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "สิบโมงเช้า",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T10:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T10:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 750.9894000002078,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 35,
+      "input": "สิบเอ็ดโมง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "สิบเอ็ดโมง",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T11:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T11:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 741.267599999901,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 36,
+      "input": "เก้าโมงครึ่ง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "เก้าโมงครึ่ง",
+        "start_char": 0,
+        "end_char": 12,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T09:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T09:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 846.2784999999258,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 37,
+      "input": "สิบโมงสี่สิบห้า",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "สิบโมงสี่สิบห้า",
+        "start_char": 0,
+        "end_char": 15,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T10:45:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T10:45:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1029.0098000000398,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 38,
+      "input": "เที่ยงตรง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "เที่ยงตรง",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 965.3808999999001,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 39,
+      "input": "เที่ยงวัน",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "เที่ยงวัน",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 895.5539999999473,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 40,
+      "input": "เที่ยงครึ่ง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "เที่ยงครึ่ง",
+        "start_char": 0,
+        "end_char": 11,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T12:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T12:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 908.2710000000134,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 41,
+      "input": "บ่ายโมง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "บ่ายโมง",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T13:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T13:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 953.4473999999591,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 42,
+      "input": "บ่ายสอง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "บ่ายสอง",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T14:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T14:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 882.9344999999194,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 43,
+      "input": "บ่ายสาม",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "บ่ายสาม",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T15:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T15:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1091.7524000001322,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 44,
+      "input": "บ่ายโมงครึ่ง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "บ่ายโมงครึ่ง",
+        "start_char": 0,
+        "end_char": 12,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T13:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T13:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 938.9019000000189,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 45,
+      "input": "บ่ายสองสี่สิบห้า",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "บ่ายสองสี่สิบห้า",
+        "start_char": 0,
+        "end_char": 16,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T14:45:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T14:45:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 984.1695000000072,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 46,
+      "input": "บ่ายสามสิบห้า",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "บ่ายสามสิบห้า",
+        "start_char": 0,
+        "end_char": 13,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T15:15:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T15:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 887.003199999981,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 47,
+      "input": "สี่โมงเย็น",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "สี่โมงเย็น",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T16:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T16:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 822.2412999998596,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 48,
+      "input": "ห้าโมงเย็น",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "ห้าโมงเย็น",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T17:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T17:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 843.1926999999177,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 49,
+      "input": "หกโมงเย็น",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "หกโมงเย็น",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T18:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T18:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1427.263000000039,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 50,
+      "input": "ห้าโมงครึ่ง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "ห้าโมงครึ่ง",
+        "start_char": 0,
+        "end_char": 11,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T17:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T05:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1946.5339999999287,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 51,
+      "input": "หนึ่งทุ่ม",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "หนึ่งทุ่ม",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T19:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T21:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 955.2392000000509,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 52,
+      "input": "ทุ่มนึง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "ทุ่มนึง",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T19:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T20:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1164.9921000000631,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 53,
+      "input": "สองทุ่ม",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "สองทุ่ม",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T20:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T22:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1451.5008000000762,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 54,
+      "input": "สามทุ่ม",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "สามทุ่ม",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T21:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T23:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1658.9442000001782,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 55,
+      "input": "สี่ทุ่ม",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "สี่ทุ่ม",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T22:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T16:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 943.4221999999863,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 56,
+      "input": "ห้าทุ่ม",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "ห้าทุ่ม",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T23:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T17:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 928.0719999999292,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 57,
+      "input": "ทุ่มครึ่ง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "ทุ่มครึ่ง",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T19:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T13:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 3068.034500000067,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 58,
+      "input": "สี่ทุ่มครึ่ง",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "สี่ทุ่มครึ่ง",
+        "start_char": 0,
+        "end_char": 12,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T22:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T16:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 8463.48399999988,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 59,
+      "input": "เที่ยงคืน",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "เที่ยงคืน",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1248.5765999999785,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 60,
+      "input": "ตีสาม",
+      "category": "thai_6hour_clock",
+      "ground_truth": {
+        "text_span": "ตีสาม",
+        "start_char": 0,
+        "end_char": 5,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T03:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T03:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1103.418099999999,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 61,
+      "input": "เช้ามืด",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "เช้ามืด",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T04:00:00+07:00",
+        "range_end": "2026-11-08T06:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T04:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1242.4204999999802,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 62,
+      "input": "ตอนเช้ามืด",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ตอนเช้ามืด",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T04:00:00+07:00",
+        "range_end": "2026-11-08T06:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T04:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1135.0265999999465,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 63,
+      "input": "ช่วงเช้ามืด",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ช่วงเช้ามืด",
+        "start_char": 0,
+        "end_char": 11,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T04:00:00+07:00",
+        "range_end": "2026-11-08T06:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2026-11-08T04:00:00+07:00",
+        "range_end": "2026-11-08T06:59:59+07:00"
+      },
+      "latency_ms": 1705.3851000000577,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 64,
+      "input": "สายๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "สายๆ",
+        "start_char": 0,
+        "end_char": 4,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T09:00:00+07:00",
+        "range_end": "2026-11-08T11:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T14:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1149.13260000003,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 65,
+      "input": "ช่วงสาย",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ช่วงสาย",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T09:00:00+07:00",
+        "range_end": "2026-11-08T11:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2026-11-08T09:00:00+07:00",
+        "range_end": "2026-11-08T12:00:00+07:00"
+      },
+      "latency_ms": 1420.031199999812,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 66,
+      "input": "ตอนสายๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ตอนสายๆ",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T09:00:00+07:00",
+        "range_end": "2026-11-08T11:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T09:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1163.5169999999562,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 67,
+      "input": "บ่ายๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "บ่ายๆ",
+        "start_char": 0,
+        "end_char": 5,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T13:00:00+07:00",
+        "range_end": "2026-11-08T15:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T14:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1115.4765999999654,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 68,
+      "input": "ช่วงบ่าย",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ช่วงบ่าย",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T13:00:00+07:00",
+        "range_end": "2026-11-08T15:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2026-11-08T12:00:00+07:00",
+        "range_end": "2026-11-08T17:59:59+07:00"
+      },
+      "latency_ms": 1459.509300000036,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 69,
+      "input": "ตอนบ่ายๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ตอนบ่ายๆ",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T13:00:00+07:00",
+        "range_end": "2026-11-08T15:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T14:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1129.7784999999294,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 70,
+      "input": "บ่ายแก่ๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "บ่ายแก่ๆ",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T15:00:00+07:00",
+        "range_end": "2026-11-08T17:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T15:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 988.1543999999849,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 71,
+      "input": "ช่วงบ่ายแก่ๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ช่วงบ่ายแก่ๆ",
+        "start_char": 0,
+        "end_char": 12,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T15:00:00+07:00",
+        "range_end": "2026-11-08T17:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2026-11-08T14:00:00+07:00",
+        "range_end": "2026-11-08T16:59:59+07:00"
+      },
+      "latency_ms": 1463.777299999947,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 72,
+      "input": "ตอนบ่ายแก่ๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ตอนบ่ายแก่ๆ",
+        "start_char": 0,
+        "end_char": 11,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T15:00:00+07:00",
+        "range_end": "2026-11-08T17:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T15:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1135.0205999999616,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 73,
+      "input": "เย็นๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "เย็นๆ",
+        "start_char": 0,
+        "end_char": 5,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T16:30:00+07:00",
+        "range_end": "2026-11-08T18:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2026-11-08T15:00:00+07:00",
+        "range_end": "2026-11-08T18:00:00+07:00"
+      },
+      "latency_ms": 1362.1937000000344,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 74,
+      "input": "ช่วงเย็น",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ช่วงเย็น",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T16:30:00+07:00",
+        "range_end": "2026-11-08T18:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2026-11-08T15:00:00+07:00",
+        "range_end": "2026-11-08T18:00:00+07:00"
+      },
+      "latency_ms": 1357.02880000008,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 75,
+      "input": "ตอนเย็นๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ตอนเย็นๆ",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T16:30:00+07:00",
+        "range_end": "2026-11-08T18:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2026-11-08T15:00:00+07:00",
+        "range_end": "2026-11-08T18:00:00+07:00"
+      },
+      "latency_ms": 1306.5225999998802,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 76,
+      "input": "หัวค่ำ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "หัวค่ำ",
+        "start_char": 0,
+        "end_char": 6,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T18:30:00+07:00",
+        "range_end": "2026-11-08T20:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T17:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1009.8689999999806,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 77,
+      "input": "ช่วงหัวค่ำ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ช่วงหัวค่ำ",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T18:30:00+07:00",
+        "range_end": "2026-11-08T20:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2026-11-08T16:00:00+07:00",
+        "range_end": "2026-11-08T19:00:00+07:00"
+      },
+      "latency_ms": 1345.4125999999178,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 78,
+      "input": "ตอนหัวค่ำ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ตอนหัวค่ำ",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T18:30:00+07:00",
+        "range_end": "2026-11-08T20:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T17:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 981.6464000000451,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 79,
+      "input": "ค่ำๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ค่ำๆ",
+        "start_char": 0,
+        "end_char": 4,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T19:00:00+07:00",
+        "range_end": "2026-11-08T21:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T18:00:00+07:00"
+      },
+      "latency_ms": 854.2184999998881,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 80,
+      "input": "ช่วงค่ำ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ช่วงค่ำ",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T19:00:00+07:00",
+        "range_end": "2026-11-08T21:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2026-11-08T16:00:00+07:00",
+        "range_end": "2026-11-08T23:59:59+07:00"
+      },
+      "latency_ms": 1371.3067000001047,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 81,
+      "input": "ดึกๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ดึกๆ",
+        "start_char": 0,
+        "end_char": 4,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T22:00:00+07:00",
+        "range_end": "2026-11-09T02:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T23:00:00+07:00"
+      },
+      "latency_ms": 930.7599999999638,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 82,
+      "input": "ตอนดึก",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ตอนดึก",
+        "start_char": 0,
+        "end_char": 6,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T22:00:00+07:00",
+        "range_end": "2026-11-09T02:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T23:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 5517.634899999848,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 83,
+      "input": "ช่วงดึก",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "ช่วงดึก",
+        "start_char": 0,
+        "end_char": 7,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T22:00:00+07:00",
+        "range_end": "2026-11-09T02:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2026-11-08T21:00:00+07:00",
+        "range_end": "2026-11-09T03:00:00+07:00"
+      },
+      "latency_ms": 1580.3646000001663,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 84,
+      "input": "พรุ่งนี้สายๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "พรุ่งนี้สายๆ",
+        "start_char": 0,
+        "end_char": 12,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-09T09:00:00+07:00",
+        "range_end": "2026-11-09T11:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-09T09:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1016.8049999999766,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 85,
+      "input": "พรุ่งนี้บ่ายๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "พรุ่งนี้บ่ายๆ",
+        "start_char": 0,
+        "end_char": 13,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-09T13:00:00+07:00",
+        "range_end": "2026-11-09T15:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-09T14:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 984.8299999998744,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 86,
+      "input": "พรุ่งนี้ตอนเย็นๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "พรุ่งนี้ตอนเย็นๆ",
+        "start_char": 0,
+        "end_char": 16,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-09T16:30:00+07:00",
+        "range_end": "2026-11-09T18:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-09T18:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1042.1629999998459,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 87,
+      "input": "เมื่อวานตอนบ่ายแก่ๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "เมื่อวานตอนบ่ายแก่ๆ",
+        "start_char": 0,
+        "end_char": 19,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-07T15:00:00+07:00",
+        "range_end": "2026-11-07T17:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T15:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1057.9113000001144,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 88,
+      "input": "เมื่อวานหัวค่ำ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "เมื่อวานหัวค่ำ",
+        "start_char": 0,
+        "end_char": 14,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-07T18:30:00+07:00",
+        "range_end": "2026-11-07T20:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T18:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1219.77609999999,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 89,
+      "input": "คืนนี้ดึกๆ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "คืนนี้ดึกๆ",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-08T22:00:00+07:00",
+        "range_end": "2026-11-09T02:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T23:59:59+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 950.3049000002193,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 90,
+      "input": "วันศุกร์ตอนหัวค่ำ",
+      "category": "coarse_time_periods",
+      "ground_truth": {
+        "text_span": "วันศุกร์ตอนหัวค่ำ",
+        "start_char": 0,
+        "end_char": 17,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-11-13T18:30:00+07:00",
+        "range_end": "2026-11-13T20:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-06T17:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1071.176400000013,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 91,
+      "input": "ปี 69",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "ปี 69",
+        "start_char": 0,
+        "end_char": 5,
+        "type": "POINT",
+        "grain": "year",
+        "iso_value": "2026-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1926-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 908.9547000000948,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 92,
+      "input": "ปี'69",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "ปี'69",
+        "start_char": 0,
+        "end_char": 5,
+        "type": "POINT",
+        "grain": "year",
+        "iso_value": "2026-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1969-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 2627.172499999915,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 93,
+      "input": "ปี 67",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "ปี 67",
+        "start_char": 0,
+        "end_char": 5,
+        "type": "POINT",
+        "grain": "year",
+        "iso_value": "2024-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1924-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 2753.859200000079,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 94,
+      "input": "ปี 68",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "ปี 68",
+        "start_char": 0,
+        "end_char": 5,
+        "type": "POINT",
+        "grain": "year",
+        "iso_value": "2025-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1925-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1099.8555000001033,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 95,
+      "input": "ปี 70",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "ปี 70",
+        "start_char": 0,
+        "end_char": 5,
+        "type": "POINT",
+        "grain": "year",
+        "iso_value": "2027-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1970-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1060.4710999998588,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 96,
+      "input": "ปี 66",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "ปี 66",
+        "start_char": 0,
+        "end_char": 5,
+        "type": "POINT",
+        "grain": "year",
+        "iso_value": "2023-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2023-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1078.8072999998803,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 97,
+      "input": "ปี 65",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "ปี 65",
+        "start_char": 0,
+        "end_char": 5,
+        "type": "POINT",
+        "grain": "year",
+        "iso_value": "2022-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2022-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1589.7953999999572,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 98,
+      "input": "ปี 72",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "ปี 72",
+        "start_char": 0,
+        "end_char": 5,
+        "type": "POINT",
+        "grain": "year",
+        "iso_value": "2029-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1929-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1048.4645000001365,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 99,
+      "input": "15 มี.ค. 67",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "15 มี.ค. 67",
+        "start_char": 0,
+        "end_char": 11,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2024-03-15T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1967-03-15T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1457.8298999999788,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 100,
+      "input": "1 ม.ค. 69",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "1 ม.ค. 69",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1969-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 2668.241099999932,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 101,
+      "input": "31 ธ.ค. 68",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "31 ธ.ค. 68",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2025-12-31T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1968-12-31T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1171.3274999999612,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 102,
+      "input": "28 ก.พ. 67",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "28 ก.พ. 67",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2024-02-28T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1967-02-28T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 8054.563400000006,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 103,
+      "input": "12 ส.ค. 66",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "12 ส.ค. 66",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2023-08-12T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2023-08-12T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1247.6916000000529,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 104,
+      "input": "5 ธ.ค. 65",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "5 ธ.ค. 65",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2022-12-05T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2022-12-05T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1261.90059999999,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 105,
+      "input": "13 เม.ย. 68",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "13 เม.ย. 68",
+        "start_char": 0,
+        "end_char": 11,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2025-04-13T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1968-04-13T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1263.2346000000325,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 106,
+      "input": "23 ต.ค. 67",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "23 ต.ค. 67",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2024-10-23T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1967-10-23T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1239.0341000000262,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 107,
+      "input": "15/03/67",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "15/03/67",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2024-03-15T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1967-03-15T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1209.9381000000449,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 108,
+      "input": "01/01/69",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "01/01/69",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1969-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 4566.83350000003,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 109,
+      "input": "31/12/68",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "31/12/68",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2025-12-31T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1968-12-31T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1192.8024000001187,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 110,
+      "input": "15-03-67",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "15-03-67",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2024-03-15T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1967-03-15T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1310.2148000000398,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 111,
+      "input": "05/12/66",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "05/12/66",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2023-12-05T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1966-12-05T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1629.207899999983,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 112,
+      "input": "20 ก.ค. 67",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "20 ก.ค. 67",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2024-07-20T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2024-07-20T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1227.3866000000453,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 113,
+      "input": "30 ก.ย. 68",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "30 ก.ย. 68",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2025-09-30T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1968-09-30T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1188.6182000000645,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 114,
+      "input": "10 พ.ย. 69",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "10 พ.ย. 69",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-10T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1969-11-10T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1213.9024000000518,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 115,
+      "input": "14 ก.พ. 67",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "14 ก.พ. 67",
+        "start_char": 0,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2024-02-14T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1967-02-14T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1139.8245999998835,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 116,
+      "input": "ต้นปี 68",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "ต้นปี 68",
+        "start_char": 0,
+        "end_char": 8,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2025-01-01T00:00:00+07:00",
+        "range_end": "2025-04-30T23:59:59+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1925-01-01T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 2378.880900000013,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 117,
+      "input": "กลางปี 67",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "กลางปี 67",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2024-05-01T00:00:00+07:00",
+        "range_end": "2024-08-31T23:59:59+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1967-06-30T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1196.6921000000639,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 118,
+      "input": "ปลายปี 69",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "ปลายปี 69",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2026-09-01T00:00:00+07:00",
+        "range_end": "2026-12-31T23:59:59+07:00",
+        "precision": "coarse",
+        "confidence": 0.85
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1926-12-31T23:59:59+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1244.3172999999206,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 119,
+      "input": "ไตรมาส 1 ปี 68",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "ไตรมาส 1 ปี 68",
+        "start_char": 0,
+        "end_char": 14,
+        "type": "RANGE",
+        "grain": null,
+        "iso_value": null,
+        "range_start": "2025-01-01T00:00:00+07:00",
+        "range_end": "2025-03-31T23:59:59+07:00",
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "RANGE",
+        "range_start": "2025-01-01T00:00:00+07:00",
+        "range_end": "2025-03-31T23:59:59+07:00"
+      },
+      "latency_ms": 1312.5268999999662,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 120,
+      "input": "สิ้นปี 67",
+      "category": "short_buddhist_era",
+      "ground_truth": {
+        "text_span": "สิ้นปี 67",
+        "start_char": 0,
+        "end_char": 9,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2024-12-31T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "1967-12-31T23:59:59+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1056.5303999999287,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 121,
+      "input": "คืนวันศุกร์ ตีสอง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันศุกร์ ตีสอง",
+        "start_char": 0,
+        "end_char": 17,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-14T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-06T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1099.5186000000103,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 122,
+      "input": "ดึกวันจันทร์ ตีหนึ่งครึ่ง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "ดึกวันจันทร์ ตีหนึ่งครึ่ง",
+        "start_char": 0,
+        "end_char": 25,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-10T01:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T01:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1086.5828000000874,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 123,
+      "input": "คืนนี้ ตีสาม",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนนี้ ตีสาม",
+        "start_char": 0,
+        "end_char": 12,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-09T03:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T03:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1010.0474999999278,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 124,
+      "input": "เมื่อคืน ตีสอง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "เมื่อคืน ตีสอง",
+        "start_char": 0,
+        "end_char": 14,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1007.385099999965,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 125,
+      "input": "คืนวันเสาร์ ตีสี่",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันเสาร์ ตีสี่",
+        "start_char": 0,
+        "end_char": 17,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-15T04:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T04:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1003.58859999983,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 126,
+      "input": "คืนวันพุธ เที่ยงคืนครึ่ง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันพุธ เที่ยงคืนครึ่ง",
+        "start_char": 0,
+        "end_char": 24,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-12T00:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-12T00:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1213.5926000000836,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 127,
+      "input": "คืนวันพฤหัส ตีหนึ่ง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันพฤหัส ตีหนึ่ง",
+        "start_char": 0,
+        "end_char": 19,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-13T01:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-04T01:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1124.4905999999446,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 128,
+      "input": "คืนวันอังคาร ตีสองสิบห้า",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันอังคาร ตีสองสิบห้า",
+        "start_char": 0,
+        "end_char": 24,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-11T02:15:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-04T02:25:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 860.5155999998715,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 129,
+      "input": "ดึกคืนวันศุกร์ ตีสาม",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "ดึกคืนวันศุกร์ ตีสาม",
+        "start_char": 0,
+        "end_char": 20,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-14T03:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-06T03:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 807.6085000000148,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 130,
+      "input": "เมื่อคืน ตีสามครึ่ง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "เมื่อคืน ตีสามครึ่ง",
+        "start_char": 0,
+        "end_char": 19,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T03:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T03:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 796.6226000000916,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 131,
+      "input": "คืนนี้ ตีห้า",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนนี้ ตีห้า",
+        "start_char": 0,
+        "end_char": 12,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-09T05:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-09T05:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 749.8960999998872,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 132,
+      "input": "คืนวันอาทิตย์ ตีสี่",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันอาทิตย์ ตีสี่",
+        "start_char": 0,
+        "end_char": 19,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-09T04:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T04:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 755.6196999998974,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 133,
+      "input": "คืนวันจันทร์ เที่ยงคืน",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันจันทร์ เที่ยงคืน",
+        "start_char": 0,
+        "end_char": 22,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-10T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-09T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 744.3865999998707,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 134,
+      "input": "คืนวันเสาร์ ตีสอง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันเสาร์ ตีสอง",
+        "start_char": 0,
+        "end_char": 17,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-15T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 810.032099999944,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 135,
+      "input": "ดึกคืนนี้ ตีหนึ่ง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "ดึกคืนนี้ ตีหนึ่ง",
+        "start_char": 0,
+        "end_char": 17,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-09T01:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T01:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 811.4643999999771,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 136,
+      "input": "คืนวันพฤหัส ตีสี่ครึ่ง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันพฤหัส ตีสี่ครึ่ง",
+        "start_char": 0,
+        "end_char": 22,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-13T04:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-04T04:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 866.7633000000023,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 137,
+      "input": "ดึกวันพุธ ตีสอง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "ดึกวันพุธ ตีสอง",
+        "start_char": 0,
+        "end_char": 15,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-12T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-10T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 814.3411999999444,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 138,
+      "input": "เมื่อคืน ตีหนึ่ง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "เมื่อคืน ตีหนึ่ง",
+        "start_char": 0,
+        "end_char": 16,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T01:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T01:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 912.7838000001702,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 139,
+      "input": "คืนนี้ ตีสอง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนนี้ ตีสอง",
+        "start_char": 0,
+        "end_char": 12,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-09T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-09T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 817.2526000000744,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 140,
+      "input": "คืนวันอังคาร ตีสาม",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันอังคาร ตีสาม",
+        "start_char": 0,
+        "end_char": 18,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-11T03:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-10T03:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 811.4748000000418,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 141,
+      "input": "คืนวันศุกร์ สี่ทุ่ม",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันศุกร์ สี่ทุ่ม",
+        "start_char": 0,
+        "end_char": 19,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-13T22:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-06T20:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 876.3165000000299,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 142,
+      "input": "คืนวันศุกร์ สามทุ่ม",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันศุกร์ สามทุ่ม",
+        "start_char": 0,
+        "end_char": 19,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-13T21:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-06T20:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 965.2657999999974,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 143,
+      "input": "ดึกวันจันทร์ ห้าทุ่ม",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "ดึกวันจันทร์ ห้าทุ่ม",
+        "start_char": 0,
+        "end_char": 20,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-09T23:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T17:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 921.6920999999729,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 144,
+      "input": "คืนนี้ สองทุ่มครึ่ง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนนี้ สองทุ่มครึ่ง",
+        "start_char": 0,
+        "end_char": 19,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T20:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T22:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 905.4607999999007,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 145,
+      "input": "เมื่อคืน สี่ทุ่ม",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "เมื่อคืน สี่ทุ่ม",
+        "start_char": 0,
+        "end_char": 16,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-07T22:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T16:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 884.0207999999166,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 146,
+      "input": "คืนวันเสาร์ หนึ่งทุ่ม",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันเสาร์ หนึ่งทุ่ม",
+        "start_char": 0,
+        "end_char": 21,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-14T19:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T21:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 862.5405999998748,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 147,
+      "input": "คืนวันพุธ ห้าทุ่มครึ่ง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "คืนวันพุธ ห้าทุ่มครึ่ง",
+        "start_char": 0,
+        "end_char": 22,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-11T23:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-12T20:30:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 944.7634000000562,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 148,
+      "input": "เช้าวันเสาร์ ตีสอง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "เช้าวันเสาร์ ตีสอง",
+        "start_char": 0,
+        "end_char": 18,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-14T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-07T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 850.3716000000168,
+      "is_correct": false,
+      "error": null
+    },
+    {
+      "id": 149,
+      "input": "เช้าวันอาทิตย์ ตีสาม",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "เช้าวันอาทิตย์ ตีสาม",
+        "start_char": 0,
+        "end_char": 20,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T03:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-08T03:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1016.8581000000358,
+      "is_correct": true,
+      "error": null
+    },
+    {
+      "id": 150,
+      "input": "วันศุกร์ ตีสอง",
+      "category": "night_date_rollover",
+      "ground_truth": {
+        "text_span": "วันศุกร์ ตีสอง",
+        "start_char": 0,
+        "end_char": 14,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-13T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "prediction": {
+        "type": "POINT",
+        "iso_value": "2026-11-13T02:00:00+07:00",
+        "range_start": null,
+        "range_end": null
+      },
+      "latency_ms": 1014.1213999997944,
+      "is_correct": true,
+      "error": null
+    }
+  ]
+}

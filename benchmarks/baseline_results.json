@@ -1,0 +1,220 @@
+{
+  "benchmark_metadata": {
+    "date": "2026-11-09T21:29:47.512760+07:00",
+    "sample_size": 150,
+    "go_threshold": "Error Rate > 30%"
+  },
+  "systems": {
+    "dateparser": {
+      "system_name": "dateparser",
+      "version": "1.5.0",
+      "total": 150,
+      "correct": 9,
+      "errors": 141,
+      "error_rate": 0.94,
+      "wilson_ci": [
+        0.8899,
+        0.9681
+      ],
+      "per_category": {
+        "coarse_time_periods": {
+          "category": "coarse_time_periods",
+          "total": 30,
+          "correct": 0,
+          "errors": 30,
+          "error_rate": 1.0,
+          "wilson_ci": [
+            0.8865,
+            1.0
+          ]
+        },
+        "night_date_rollover": {
+          "category": "night_date_rollover",
+          "total": 30,
+          "correct": 0,
+          "errors": 30,
+          "error_rate": 1.0,
+          "wilson_ci": [
+            0.8865,
+            1.0
+          ]
+        },
+        "relative_day_week": {
+          "category": "relative_day_week",
+          "total": 30,
+          "correct": 9,
+          "errors": 21,
+          "error_rate": 0.7,
+          "wilson_ci": [
+            0.5212,
+            0.8334
+          ]
+        },
+        "short_buddhist_era": {
+          "category": "short_buddhist_era",
+          "total": 30,
+          "correct": 0,
+          "errors": 30,
+          "error_rate": 1.0,
+          "wilson_ci": [
+            0.8865,
+            1.0
+          ]
+        },
+        "thai_6hour_clock": {
+          "category": "thai_6hour_clock",
+          "total": 30,
+          "correct": 0,
+          "errors": 30,
+          "error_rate": 1.0,
+          "wilson_ci": [
+            0.8865,
+            1.0
+          ]
+        }
+      },
+      "gate_decision": "GO"
+    },
+    "pythainlp_wrapper": {
+      "system_name": "pythainlp_wrapper",
+      "version": "5.1.2",
+      "total": 150,
+      "correct": 28,
+      "errors": 122,
+      "error_rate": 0.8133,
+      "wilson_ci": [
+        0.7434,
+        0.8676
+      ],
+      "per_category": {
+        "coarse_time_periods": {
+          "category": "coarse_time_periods",
+          "total": 30,
+          "correct": 0,
+          "errors": 30,
+          "error_rate": 1.0,
+          "wilson_ci": [
+            0.8865,
+            1.0
+          ]
+        },
+        "night_date_rollover": {
+          "category": "night_date_rollover",
+          "total": 30,
+          "correct": 0,
+          "errors": 30,
+          "error_rate": 1.0,
+          "wilson_ci": [
+            0.8865,
+            1.0
+          ]
+        },
+        "relative_day_week": {
+          "category": "relative_day_week",
+          "total": 30,
+          "correct": 7,
+          "errors": 23,
+          "error_rate": 0.7667,
+          "wilson_ci": [
+            0.5907,
+            0.8821
+          ]
+        },
+        "short_buddhist_era": {
+          "category": "short_buddhist_era",
+          "total": 30,
+          "correct": 0,
+          "errors": 30,
+          "error_rate": 1.0,
+          "wilson_ci": [
+            0.8865,
+            1.0
+          ]
+        },
+        "thai_6hour_clock": {
+          "category": "thai_6hour_clock",
+          "total": 30,
+          "correct": 21,
+          "errors": 9,
+          "error_rate": 0.3,
+          "wilson_ci": [
+            0.1666,
+            0.4788
+          ]
+        }
+      },
+      "gate_decision": "GO"
+    },
+    "simple_regex": {
+      "system_name": "simple_regex",
+      "version": "1.0.0 (Native Python regex)",
+      "total": 150,
+      "correct": 40,
+      "errors": 110,
+      "error_rate": 0.7333,
+      "wilson_ci": [
+        0.6574,
+        0.7976
+      ],
+      "per_category": {
+        "coarse_time_periods": {
+          "category": "coarse_time_periods",
+          "total": 30,
+          "correct": 0,
+          "errors": 30,
+          "error_rate": 1.0,
+          "wilson_ci": [
+            0.8865,
+            1.0
+          ]
+        },
+        "night_date_rollover": {
+          "category": "night_date_rollover",
+          "total": 30,
+          "correct": 5,
+          "errors": 25,
+          "error_rate": 0.8333,
+          "wilson_ci": [
+            0.6644,
+            0.9266
+          ]
+        },
+        "relative_day_week": {
+          "category": "relative_day_week",
+          "total": 30,
+          "correct": 10,
+          "errors": 20,
+          "error_rate": 0.6667,
+          "wilson_ci": [
+            0.4878,
+            0.8077
+          ]
+        },
+        "short_buddhist_era": {
+          "category": "short_buddhist_era",
+          "total": 30,
+          "correct": 0,
+          "errors": 30,
+          "error_rate": 1.0,
+          "wilson_ci": [
+            0.8865,
+            1.0
+          ]
+        },
+        "thai_6hour_clock": {
+          "category": "thai_6hour_clock",
+          "total": 30,
+          "correct": 25,
+          "errors": 5,
+          "error_rate": 0.1667,
+          "wilson_ci": [
+            0.0734,
+            0.3356
+          ]
+        }
+      },
+      "gate_decision": "GO"
+    }
+  },
+  "final_gate_verdict": "GO"
+}

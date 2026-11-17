@@ -1,0 +1,1505 @@
+{
+  "total_failures": 45,
+  "source_file": "test_ood_500.jsonl",
+  "cases": [
+    {
+      "id": 2543,
+      "raw_input": "สนใจลงทะเบียนร่วมกิจกรรมก่อนอังคารหน้าไหมครับ",
+      "text_length": 45,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "อังคารหน้า",
+        "start_char": 28,
+        "end_char": 38,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-17T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": "อังคารหน้า",
+          "start_char": 28,
+          "end_char": 38,
+          "type": "POINT",
+          "iso_value": "2026-11-10T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "day"
+        }
+      ],
+      "span_f1": 1.0,
+      "value_accuracy": 0.0,
+      "notes": "Relative day/week offset 9 days [tmpl: disjoint_marketing]"
+    },
+    {
+      "id": 2566,
+      "raw_input": "รบกวนส่งข้อมูลสรุปให้ก่อน4 วันก่อนด้วยครับ",
+      "text_length": 42,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "4 วันก่อน",
+        "start_char": 25,
+        "end_char": 34,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-04T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Relative day/week offset -4 days [tmpl: disjoint_request]"
+    },
+    {
+      "id": 2620,
+      "raw_input": "โปรโมชั่นพิเศษสิ้นสุด ทุ่มนึง",
+      "text_length": 29,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "ทุ่มนึง",
+        "start_char": 22,
+        "end_char": 29,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T19:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": " ทุ่มนึง",
+          "start_char": 21,
+          "end_char": 29,
+          "type": "POINT",
+          "iso_value": "2026-11-08T19:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Thai clock time 19:00 [tmpl: disjoint_sales]"
+    },
+    {
+      "id": 2630,
+      "raw_input": "ขอนัดหมายล่วงหน้านะครับ... ทุ่มตรง",
+      "text_length": 34,
+      "taxonomy_category": "OCR / typo noise corruption",
+      "ground_truth": {
+        "text_span": "ทุ่มตรง",
+        "start_char": 27,
+        "end_char": 34,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T19:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": " ทุ่มตรง",
+          "start_char": 26,
+          "end_char": 34,
+          "type": "POINT",
+          "iso_value": "2026-11-08T19:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Thai clock time 19:00 [tmpl: disjoint_ellipsis_noise]"
+    },
+    {
+      "id": 2660,
+      "raw_input": "แจ้งปิดปรับปรุงเซิร์ฟเวอร์ช่วง อังคารหน้า",
+      "text_length": 41,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "อังคารหน้า",
+        "start_char": 31,
+        "end_char": 41,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-17T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": "อังคารหน้า",
+          "start_char": 31,
+          "end_char": 41,
+          "type": "POINT",
+          "iso_value": "2026-11-10T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "day"
+        }
+      ],
+      "span_f1": 1.0,
+      "value_accuracy": 0.0,
+      "notes": "Relative day/week offset 9 days [tmpl: disjoint_ops]"
+    },
+    {
+      "id": 2670,
+      "raw_input": "ทางร้านจะจัดส่งพัสดุรอบด่วนช่วงบ่ายโมงตรง",
+      "text_length": 41,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "บ่ายโมงตรง",
+        "start_char": 31,
+        "end_char": 41,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T13:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": "ช่วงบ่าย",
+          "start_char": 27,
+          "end_char": 35,
+          "type": "RANGE",
+          "iso_value": null,
+          "range_start": "2026-11-08T13:00:00+07:00",
+          "range_end": "2026-11-08T15:30:00+07:00",
+          "precision": "coarse",
+          "confidence": 0.8,
+          "grain": "auto"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Thai clock time 13:00 [tmpl: disjoint_shipping]"
+    },
+    {
+      "id": 2690,
+      "raw_input": "เรียนเชิญประชุมสามัญประจำปี 13 เม.ย. 69",
+      "text_length": 39,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "13 เม.ย. 69",
+        "start_char": 28,
+        "end_char": 39,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-04-13T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": "ปี 13",
+          "start_char": 25,
+          "end_char": 30,
+          "type": "POINT",
+          "iso_value": "1970-01-01T00:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "year"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Buddhist Era expression 13 เม.ย. 69 [tmpl: disjoint_formal]"
+    },
+    {
+      "id": 2706,
+      "raw_input": "รบกวนส่งข้อมูลสรุปให้ก่อน1 วันก่อนด้วยครับ",
+      "text_length": 42,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "1 วันก่อน",
+        "start_char": 25,
+        "end_char": 34,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-07T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Relative day/week offset -1 days [tmpl: disjoint_request]"
+    },
+    {
+      "id": 2738,
+      "raw_input": "จะโอนยอดเงินส่วนที่เหลือให้ภายใน1 วันก่อนนะคะ",
+      "text_length": 45,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "1 วันก่อน",
+        "start_char": 32,
+        "end_char": 41,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-07T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Relative day/week offset -1 days [tmpl: disjoint_finance]"
+    },
+    {
+      "id": 2739,
+      "raw_input": "เรียนเชิญประชุมสามัญประจำปี ทุ่มตรง",
+      "text_length": 35,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "ทุ่มตรง",
+        "start_char": 28,
+        "end_char": 35,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T19:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": " ทุ่มตรง",
+          "start_char": 27,
+          "end_char": 35,
+          "type": "POINT",
+          "iso_value": "2026-11-08T19:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Thai clock time 19:00 [tmpl: disjoint_formal]"
+    },
+    {
+      "id": 2741,
+      "raw_input": "ลูกค้าสะดวกรับของตอนบ่าย 3หรือเปล่า",
+      "text_length": 35,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "บ่าย 3",
+        "start_char": 20,
+        "end_char": 26,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T15:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": "ตอนบ่าย",
+          "start_char": 17,
+          "end_char": 24,
+          "type": "RANGE",
+          "iso_value": null,
+          "range_start": "2026-11-08T13:00:00+07:00",
+          "range_end": "2026-11-08T15:30:00+07:00",
+          "precision": "coarse",
+          "confidence": 0.8,
+          "grain": "auto"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Thai clock time 15:00 [tmpl: disjoint_customer_service]"
+    },
+    {
+      "id": 2777,
+      "raw_input": "ระบบจะทำการปิดปรับปรุงชั่วคราว: โมงเช้า",
+      "text_length": 39,
+      "taxonomy_category": "OCR / typo noise corruption",
+      "ground_truth": {
+        "text_span": "โมงเช้า",
+        "start_char": 32,
+        "end_char": 39,
+        "type": "POINT",
+        "grain": "hour",
+        "iso_value": "2026-11-08T07:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": " โมงเช้า",
+          "start_char": 31,
+          "end_char": 39,
+          "type": "POINT",
+          "iso_value": "2026-11-08T07:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Thai clock time 07:00 [tmpl: disjoint_colon_noise]"
+    },
+    {
+      "id": 2781,
+      "raw_input": "สนใจลงทะเบียนร่วมกิจกรรมก่อนจันทร์หน้าไหมครับ",
+      "text_length": 45,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "จันทร์หน้า",
+        "start_char": 28,
+        "end_char": 38,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-16T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": "จันทร์หน้า",
+          "start_char": 28,
+          "end_char": 38,
+          "type": "POINT",
+          "iso_value": "2026-11-09T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "day"
+        }
+      ],
+      "span_f1": 1.0,
+      "value_accuracy": 0.0,
+      "notes": "Relative day/week offset 8 days [tmpl: disjoint_marketing]"
+    },
+    {
+      "id": 2813,
+      "raw_input": "ฝ่ายบุคคลแจ้งให้เข้ามารายงานตัว4 วันก่อน",
+      "text_length": 40,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "4 วันก่อน",
+        "start_char": 31,
+        "end_char": 40,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-04T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Relative day/week offset -4 days [tmpl: disjoint_hr]"
+    },
+    {
+      "id": 2814,
+      "raw_input": "ทางร้านจะจัดส่งพัสดุรอบด่วนช่วงบ่ายสองสี่สิบห้า",
+      "text_length": 47,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "บ่ายสองสี่สิบห้า",
+        "start_char": 31,
+        "end_char": 47,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T14:45:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": "ช่วงบ่าย",
+          "start_char": 27,
+          "end_char": 35,
+          "type": "RANGE",
+          "iso_value": null,
+          "range_start": "2026-11-08T13:00:00+07:00",
+          "range_end": "2026-11-08T15:30:00+07:00",
+          "precision": "coarse",
+          "confidence": 0.8,
+          "grain": "auto"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Thai clock time 14:45 [tmpl: disjoint_shipping]"
+    },
+    {
+      "id": 2819,
+      "raw_input": "ลูกค้าสะดวกรับของตอนบ่ายแก่ๆหรือเปล่า",
+      "text_length": 37,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "บ่ายแก่ๆ",
+        "start_char": 20,
+        "end_char": 28,
+        "type": "RANGE",
+        "grain": "auto",
+        "iso_value": null,
+        "range_start": "2026-11-08T15:00:00+07:00",
+        "range_end": "2026-11-08T17:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "model_predictions": [
+        {
+          "text_span": "ตอนบ่ายแก่ๆ",
+          "start_char": 17,
+          "end_char": 28,
+          "type": "RANGE",
+          "iso_value": null,
+          "range_start": "2026-11-08T15:00:00+07:00",
+          "range_end": "2026-11-08T17:00:00+07:00",
+          "precision": "coarse",
+          "confidence": 0.85,
+          "grain": "auto"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Coarse range 15:00:00 to 17:00:00 [tmpl: disjoint_customer_service]"
+    },
+    {
+      "id": 2832,
+      "raw_input": "เรียนเชิญประชุมสามัญประจำปี 31 ธ.ค. 68",
+      "text_length": 38,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "31 ธ.ค. 68",
+        "start_char": 28,
+        "end_char": 38,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2025-12-31T00:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [
+        {
+          "text_span": "ปี 31",
+          "start_char": 25,
+          "end_char": 30,
+          "type": "POINT",
+          "iso_value": "1988-01-01T00:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "year"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Buddhist Era expression 31 ธ.ค. 68 [tmpl: disjoint_formal]"
+    },
+    {
+      "id": 2846,
+      "raw_input": "สนใจลงทะเบียนร่วมกิจกรรมก่อน2 วันก่อนไหมครับ",
+      "text_length": 44,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "2 วันก่อน",
+        "start_char": 28,
+        "end_char": 37,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-06T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Relative day/week offset -2 days [tmpl: disjoint_marketing]"
+    },
+    {
+      "id": 2971,
+      "raw_input": "เจอกัน พน. นะเพื่อน",
+      "text_length": 19,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "พน.",
+        "start_char": 7,
+        "end_char": 10,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-09T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 0.9
+      },
+      "model_predictions": [
+        {
+          "text_span": "พน",
+          "start_char": 7,
+          "end_char": 9,
+          "type": "POINT",
+          "iso_value": "2026-11-09T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "day"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Slang with period พน."
+    },
+    {
+      "id": 2972,
+      "raw_input": "ส่งงาน มรน. เด้อ",
+      "text_length": 16,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "มรน.",
+        "start_char": 7,
+        "end_char": 11,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-10T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 0.9
+      },
+      "model_predictions": [
+        {
+          "text_span": "มรน",
+          "start_char": 7,
+          "end_char": 10,
+          "type": "POINT",
+          "iso_value": "2026-11-10T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "day"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Slang with period มรน."
+    },
+    {
+      "id": 2973,
+      "raw_input": "เจอกัน 3ทุ่มกว่าๆ ที่ผับ",
+      "text_length": 24,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "3ทุ่มกว่าๆ",
+        "start_char": 7,
+        "end_char": 17,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T21:15:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "coarse",
+        "confidence": 0.75
+      },
+      "model_predictions": [
+        {
+          "text_span": "3ทุ่ม",
+          "start_char": 7,
+          "end_char": 12,
+          "type": "POINT",
+          "iso_value": "2026-11-08T21:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Colloquial 3ทุ่มกว่าๆ"
+    },
+    {
+      "id": 2974,
+      "raw_input": "ไปถึง บ่าย2นิดๆ จ้า",
+      "text_length": 19,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "บ่าย2นิดๆ",
+        "start_char": 6,
+        "end_char": 15,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T14:10:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "coarse",
+        "confidence": 0.75
+      },
+      "model_predictions": [
+        {
+          "text_span": "บ่าย2",
+          "start_char": 6,
+          "end_char": 11,
+          "type": "POINT",
+          "iso_value": "2026-11-08T14:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Colloquial บ่าย2นิดๆ"
+    },
+    {
+      "id": 2975,
+      "raw_input": "ตื่นมาก็ สายโด่ง แล้ว",
+      "text_length": 21,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "สายโด่ง",
+        "start_char": 9,
+        "end_char": 16,
+        "type": "RANGE",
+        "grain": "auto",
+        "iso_value": null,
+        "range_start": "2026-11-08T10:00:00+07:00",
+        "range_end": "2026-11-08T12:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.7
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Idiomatic coarse สายโด่ง"
+    },
+    {
+      "id": 2976,
+      "raw_input": "นัดกินข้าว เที่ยงเป๊ง นะ",
+      "text_length": 24,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "เที่ยงเป๊ง",
+        "start_char": 11,
+        "end_char": 21,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 0.85
+      },
+      "model_predictions": [
+        {
+          "text_span": "เที่ยง",
+          "start_char": 11,
+          "end_char": 17,
+          "type": "POINT",
+          "iso_value": "2026-11-08T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Idiomatic exact noon เที่ยงเป๊ง"
+    },
+    {
+      "id": 2977,
+      "raw_input": "แดดร่มลมตก บ่ายคล้อย ค่อยไป",
+      "text_length": 27,
+      "taxonomy_category": "Unhandled colloquial slang",
+      "ground_truth": {
+        "text_span": "บ่ายคล้อย",
+        "start_char": 11,
+        "end_char": 20,
+        "type": "RANGE",
+        "grain": "auto",
+        "iso_value": null,
+        "range_start": "2026-11-08T14:30:00+07:00",
+        "range_end": "2026-11-08T16:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.7
+      },
+      "model_predictions": [
+        {
+          "text_span": "บ่าย",
+          "start_char": 11,
+          "end_char": 15,
+          "type": "POINT",
+          "iso_value": "2026-11-08T13:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Idiomatic coarse บ่ายคล้อย"
+    },
+    {
+      "id": 2978,
+      "raw_input": "ส่งของให้ พรุ่งนี้้ นะ",
+      "text_length": 22,
+      "taxonomy_category": "OCR / typo noise corruption",
+      "ground_truth": {
+        "text_span": "พรุ่งนี้้",
+        "start_char": 10,
+        "end_char": 19,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-09T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 0.8
+      },
+      "model_predictions": [
+        {
+          "text_span": "พรุ่งนี้",
+          "start_char": 10,
+          "end_char": 18,
+          "type": "POINT",
+          "iso_value": "2026-11-09T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "day"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Typo double tone mark"
+    },
+    {
+      "id": 2979,
+      "raw_input": "เจอกัน พรุ่งนี้ ครับ",
+      "text_length": 20,
+      "taxonomy_category": "OCR / typo noise corruption",
+      "ground_truth": {
+        "text_span": "พรุ่งนี้",
+        "start_char": 7,
+        "end_char": 15,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-09T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 0.8
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Typo inverted unicode vowel order"
+    },
+    {
+      "id": 2980,
+      "raw_input": "นัดคุยงาน มะรืนนีั",
+      "text_length": 18,
+      "taxonomy_category": "OCR / typo noise corruption",
+      "ground_truth": {
+        "text_span": "มะรืนนีั",
+        "start_char": 10,
+        "end_char": 18,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-10T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 0.8
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Typo shifted key symbol"
+    },
+    {
+      "id": 2982,
+      "raw_input": "รอเจอตอน บ่ายสองโมงครึ่งงงง",
+      "text_length": 27,
+      "taxonomy_category": "OCR / typo noise corruption",
+      "ground_truth": {
+        "text_span": "บ่ายสองโมงครึ่งงงง",
+        "start_char": 9,
+        "end_char": 27,
+        "type": "POINT",
+        "grain": "minute",
+        "iso_value": "2026-11-08T14:30:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 0.8
+      },
+      "model_predictions": [
+        {
+          "text_span": "บ่ายสองโมงครึ่ง",
+          "start_char": 9,
+          "end_char": 24,
+          "type": "POINT",
+          "iso_value": "2026-11-08T14:30:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "minute"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Chat prolonged consonant tail"
+    },
+    {
+      "id": 2983,
+      "raw_input": "สะดวกเจอกัน พรุ่งนี้หรือมะรืนนี้ ไหม",
+      "text_length": 36,
+      "taxonomy_category": "Compound multi-expression ambiguity",
+      "ground_truth": {
+        "text_span": "พรุ่งนี้หรือมะรืนนี้",
+        "start_char": 12,
+        "end_char": 32,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-09T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "unknown",
+        "confidence": 0.5
+      },
+      "model_predictions": [
+        {
+          "text_span": "พรุ่งนี้",
+          "start_char": 12,
+          "end_char": 20,
+          "type": "POINT",
+          "iso_value": "2026-11-09T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "day"
+        },
+        {
+          "text_span": "มะรืนนี้",
+          "start_char": 24,
+          "end_char": 32,
+          "type": "POINT",
+          "iso_value": "2026-11-10T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "day"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Choice between tomorrow and day after"
+    },
+    {
+      "id": 2984,
+      "raw_input": "เลือกระหว่าง จันทร์หรืออังคารหน้า ครับ",
+      "text_length": 38,
+      "taxonomy_category": "Compound multi-expression ambiguity",
+      "ground_truth": {
+        "text_span": "จันทร์หรืออังคารหน้า",
+        "start_char": 13,
+        "end_char": 33,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-16T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "unknown",
+        "confidence": 0.5
+      },
+      "model_predictions": [
+        {
+          "text_span": "อังคารหน้า",
+          "start_char": 23,
+          "end_char": 33,
+          "type": "POINT",
+          "iso_value": "2026-11-10T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "day"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Disjunctive weekday reference"
+    },
+    {
+      "id": 2985,
+      "raw_input": "มีเวลาช่วง บ่ายสองถึงบ่ายสี่ โมง",
+      "text_length": 32,
+      "taxonomy_category": "Compound multi-expression ambiguity",
+      "ground_truth": {
+        "text_span": "บ่ายสองถึงบ่ายสี่",
+        "start_char": 11,
+        "end_char": 28,
+        "type": "RANGE",
+        "grain": "hour",
+        "iso_value": null,
+        "range_start": "2026-11-08T14:00:00+07:00",
+        "range_end": "2026-11-08T16:00:00+07:00",
+        "precision": "exact",
+        "confidence": 0.85
+      },
+      "model_predictions": [
+        {
+          "text_span": "บ่ายสอง",
+          "start_char": 11,
+          "end_char": 18,
+          "type": "POINT",
+          "iso_value": "2026-11-08T14:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        },
+        {
+          "text_span": "บ่าย",
+          "start_char": 21,
+          "end_char": 25,
+          "type": "POINT",
+          "iso_value": "2026-11-08T13:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        },
+        {
+          "text_span": "สี่ โมง",
+          "start_char": 25,
+          "end_char": 32,
+          "type": "POINT",
+          "iso_value": "2026-11-08T16:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Explicit range duration afternoon"
+    },
+    {
+      "id": 2986,
+      "raw_input": "นัดได้ทั้ง พุธหน้า หรือ พฤหัสหน้า",
+      "text_length": 33,
+      "taxonomy_category": "Compound multi-expression ambiguity",
+      "ground_truth": {
+        "text_span": "พุธหน้า หรือ พฤหัสหน้า",
+        "start_char": 11,
+        "end_char": 33,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-11T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "unknown",
+        "confidence": 0.5
+      },
+      "model_predictions": [
+        {
+          "text_span": "พุธหน้า",
+          "start_char": 11,
+          "end_char": 18,
+          "type": "POINT",
+          "iso_value": "2026-11-11T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "day"
+        },
+        {
+          "text_span": "พฤหัสหน้า",
+          "start_char": 24,
+          "end_char": 33,
+          "type": "POINT",
+          "iso_value": "2026-11-12T12:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "day"
+        }
+      ],
+      "span_f1": 0.0,
+      "value_accuracy": 1.0,
+      "notes": "Disjunctive future weekday choice"
+    },
+    {
+      "id": 2987,
+      "raw_input": "เริ่มงานช่วง เช้าจรดเย็น ทุกวัน",
+      "text_length": 31,
+      "taxonomy_category": "Compound multi-expression ambiguity",
+      "ground_truth": {
+        "text_span": "เช้าจรดเย็น",
+        "start_char": 13,
+        "end_char": 24,
+        "type": "RANGE",
+        "grain": "auto",
+        "iso_value": null,
+        "range_start": "2026-11-08T08:00:00+07:00",
+        "range_end": "2026-11-08T17:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.75
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Day-long coarse interval"
+    },
+    {
+      "id": 2988,
+      "raw_input": "วันนัดหมาย 29 ก.พ. 66 ครับ",
+      "text_length": 26,
+      "taxonomy_category": "Extreme date boundary / leap year edge cases",
+      "ground_truth": {
+        "text_span": "29 ก.พ. 66",
+        "start_char": 11,
+        "end_char": 21,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": null,
+        "range_start": null,
+        "range_end": null,
+        "precision": "unknown",
+        "confidence": 0.0
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Non-leap year impossible Feb 29"
+    },
+    {
+      "id": 2989,
+      "raw_input": "กำหนดส่ง 31 เม.ย. 67 นี้",
+      "text_length": 24,
+      "taxonomy_category": "Extreme date boundary / leap year edge cases",
+      "ground_truth": {
+        "text_span": "31 เม.ย. 67",
+        "start_char": 9,
+        "end_char": 20,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": null,
+        "range_start": null,
+        "range_end": null,
+        "precision": "unknown",
+        "confidence": 0.0
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "April only has 30 days"
+    },
+    {
+      "id": 2990,
+      "raw_input": "เซ็นสัญญา 30 ก.พ. 68 แน่นอน",
+      "text_length": 27,
+      "taxonomy_category": "Extreme date boundary / leap year edge cases",
+      "ground_truth": {
+        "text_span": "30 ก.พ. 68",
+        "start_char": 10,
+        "end_char": 20,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": null,
+        "range_start": null,
+        "range_end": null,
+        "precision": "unknown",
+        "confidence": 0.0
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Physically impossible 30 Feb"
+    },
+    {
+      "id": 2993,
+      "raw_input": "สะดวกช่วงหัวค่ำ 6 โมงครึ่ง ถึง 3 ทุ่ม",
+      "text_length": 37,
+      "taxonomy_category": "Coarse time interval mismatch",
+      "ground_truth": {
+        "text_span": "ช่วงหัวค่ำ",
+        "start_char": 5,
+        "end_char": 15,
+        "type": "RANGE",
+        "grain": "auto",
+        "iso_value": null,
+        "range_start": "2026-11-08T18:00:00+07:00",
+        "range_end": "2026-11-08T21:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.75
+      },
+      "model_predictions": [
+        {
+          "text_span": "ช่วงหัวค่ำ",
+          "start_char": 5,
+          "end_char": 15,
+          "type": "RANGE",
+          "iso_value": null,
+          "range_start": "2026-11-08T18:30:00+07:00",
+          "range_end": "2026-11-08T20:30:00+07:00",
+          "precision": "coarse",
+          "confidence": 0.85,
+          "grain": "auto"
+        },
+        {
+          "text_span": "6 โมงครึ่ง",
+          "start_char": 16,
+          "end_char": 26,
+          "type": "POINT",
+          "iso_value": "2026-11-08T18:30:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "minute"
+        },
+        {
+          "text_span": "3 ทุ่ม",
+          "start_char": 31,
+          "end_char": 37,
+          "type": "POINT",
+          "iso_value": "2026-11-08T21:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.5,
+      "value_accuracy": 0.0,
+      "notes": "User defines dusk as 18:00 to 21:00 vs default 18:30-20:30"
+    },
+    {
+      "id": 2994,
+      "raw_input": "แวะมาช่วงสายๆ สัก 8 โมงครึ่ง",
+      "text_length": 28,
+      "taxonomy_category": "Coarse time interval mismatch",
+      "ground_truth": {
+        "text_span": "ช่วงสายๆ",
+        "start_char": 5,
+        "end_char": 13,
+        "type": "RANGE",
+        "grain": "auto",
+        "iso_value": null,
+        "range_start": "2026-11-08T08:30:00+07:00",
+        "range_end": "2026-11-08T11:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.75
+      },
+      "model_predictions": [
+        {
+          "text_span": "ช่วงสายๆ",
+          "start_char": 5,
+          "end_char": 13,
+          "type": "RANGE",
+          "iso_value": null,
+          "range_start": "2026-11-08T09:00:00+07:00",
+          "range_end": "2026-11-08T11:30:00+07:00",
+          "precision": "coarse",
+          "confidence": 0.8,
+          "grain": "auto"
+        },
+        {
+          "text_span": "8 โมงครึ่ง",
+          "start_char": 18,
+          "end_char": 28,
+          "type": "POINT",
+          "iso_value": "2026-11-08T08:30:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "minute"
+        }
+      ],
+      "span_f1": 0.6667,
+      "value_accuracy": 0.0,
+      "notes": "User defines late morning earlier at 08:30"
+    },
+    {
+      "id": 2995,
+      "raw_input": "เจอกันช่วงดึกๆ 4 ทุ่ม ถึง ตี 1",
+      "text_length": 30,
+      "taxonomy_category": "Coarse time interval mismatch",
+      "ground_truth": {
+        "text_span": "ช่วงดึกๆ",
+        "start_char": 6,
+        "end_char": 14,
+        "type": "RANGE",
+        "grain": "auto",
+        "iso_value": null,
+        "range_start": "2026-11-08T22:00:00+07:00",
+        "range_end": "2026-11-09T01:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.75
+      },
+      "model_predictions": [
+        {
+          "text_span": "ช่วงดึกๆ",
+          "start_char": 6,
+          "end_char": 14,
+          "type": "RANGE",
+          "iso_value": null,
+          "range_start": "2026-11-08T22:00:00+07:00",
+          "range_end": "2026-11-09T02:00:00+07:00",
+          "precision": "coarse",
+          "confidence": 0.8,
+          "grain": "auto"
+        },
+        {
+          "text_span": "4 ทุ่ม",
+          "start_char": 15,
+          "end_char": 21,
+          "type": "POINT",
+          "iso_value": "2026-11-08T22:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        },
+        {
+          "text_span": "ตี 1",
+          "start_char": 26,
+          "end_char": 30,
+          "type": "POINT",
+          "iso_value": "2026-11-08T01:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.5,
+      "value_accuracy": 0.0,
+      "notes": "User defines late night end at 01:00 vs default 02:00"
+    },
+    {
+      "id": 2996,
+      "raw_input": "นัดคุยช่วงเย็นๆ 5 โมง ถึง 1 ทุ่ม",
+      "text_length": 32,
+      "taxonomy_category": "Coarse time interval mismatch",
+      "ground_truth": {
+        "text_span": "ช่วงเย็นๆ",
+        "start_char": 6,
+        "end_char": 15,
+        "type": "RANGE",
+        "grain": "auto",
+        "iso_value": null,
+        "range_start": "2026-11-08T17:00:00+07:00",
+        "range_end": "2026-11-08T19:00:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.75
+      },
+      "model_predictions": [
+        {
+          "text_span": "ช่วงเย็นๆ",
+          "start_char": 6,
+          "end_char": 15,
+          "type": "RANGE",
+          "iso_value": null,
+          "range_start": "2026-11-08T16:30:00+07:00",
+          "range_end": "2026-11-08T18:30:00+07:00",
+          "precision": "coarse",
+          "confidence": 0.8,
+          "grain": "auto"
+        },
+        {
+          "text_span": "5 โมง",
+          "start_char": 16,
+          "end_char": 21,
+          "type": "POINT",
+          "iso_value": "2026-11-08T17:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        },
+        {
+          "text_span": "1 ทุ่ม",
+          "start_char": 26,
+          "end_char": 32,
+          "type": "POINT",
+          "iso_value": "2026-11-08T19:00:00+07:00",
+          "range_start": null,
+          "range_end": null,
+          "precision": "exact",
+          "confidence": 1.0,
+          "grain": "hour"
+        }
+      ],
+      "span_f1": 0.5,
+      "value_accuracy": 0.0,
+      "notes": "Shifted evening window 17:00 to 19:00"
+    },
+    {
+      "id": 2997,
+      "raw_input": "ขอเรียนแจ้งให้ผู้เกี่ยวข้องทุกท่านทราบล่วงหน้าว่าทางเรามีความจำเป็นต้องแจ้งเลื่อนกำหนดการประชุมเนื่องจากติดภารกิจด่วนมาก โดยขอเลื่อนไปเป็น พรุ่งนี้",
+      "text_length": 147,
+      "taxonomy_category": "Length exceeded truncation",
+      "ground_truth": {
+        "text_span": "พรุ่งนี้",
+        "start_char": 139,
+        "end_char": 147,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-09T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Sentence length 147 chars (> 120 SLA bound)"
+    },
+    {
+      "id": 2998,
+      "raw_input": "เอกสารข้อตกลงและสัญญาจ้างงานโครงการปรับปรุงระบบคลาวด์คอมพิวติ้งขององค์กรประจำปีงบประมาณได้รับการอนุมัติเรียบร้อยแล้วโดยมีกำหนดส่งมอบงาน มะรืนนี้",
+      "text_length": 144,
+      "taxonomy_category": "Length exceeded truncation",
+      "ground_truth": {
+        "text_span": "มะรืนนี้",
+        "start_char": 136,
+        "end_char": 144,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-10T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Sentence length 145 chars (> 120 SLA bound)"
+    },
+    {
+      "id": 2999,
+      "raw_input": "รายงานสรุปผลการดำเนินงานไตรมาสที่สามได้รับการตรวจสอบและรับรองความถูกต้องจากคณะกรรมการฝ่ายบริหารเรียบร้อยแล้วพร้อมประกาศผลอย่างเป็นทางการ วันศุกร์หน้า",
+      "text_length": 149,
+      "taxonomy_category": "Length exceeded truncation",
+      "ground_truth": {
+        "text_span": "วันศุกร์หน้า",
+        "start_char": 137,
+        "end_char": 149,
+        "type": "POINT",
+        "grain": "day",
+        "iso_value": "2026-11-13T12:00:00+07:00",
+        "range_start": null,
+        "range_end": null,
+        "precision": "exact",
+        "confidence": 1.0
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Sentence length 150 chars (> 120 SLA bound)"
+    },
+    {
+      "id": 3000,
+      "raw_input": "ตามที่ได้ประสานงานกับทีมงานวิศวกรผู้เชี่ยวชาญด้านความปลอดภัยทางไซเบอร์เพื่อเข้าตรวจสอบระบบและแก้ไขช่องโหว่ทั้งหมดนั้นทางทีมพร้อมเข้าดำเนินการช่วง ตอนสายๆ",
+      "text_length": 153,
+      "taxonomy_category": "Length exceeded truncation",
+      "ground_truth": {
+        "text_span": "ตอนสายๆ",
+        "start_char": 146,
+        "end_char": 153,
+        "type": "RANGE",
+        "grain": "auto",
+        "iso_value": null,
+        "range_start": "2026-11-08T09:00:00+07:00",
+        "range_end": "2026-11-08T11:30:00+07:00",
+        "precision": "coarse",
+        "confidence": 0.8
+      },
+      "model_predictions": [],
+      "span_f1": 0.0,
+      "value_accuracy": 0.0,
+      "notes": "Sentence length 155 chars (> 120 SLA bound)"
+    }
+  ]
+}

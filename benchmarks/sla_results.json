@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-11-08T21:40:11.424022",
+  "overall_sla_passed": true,
+  "latency_benchmark": {
+    "iterations": 5000,
+    "warmup_runs": 200,
+    "mean_ms": 0.1363,
+    "p50_ms": 0.1286,
+    "p90_ms": 0.1829,
+    "p95_ms": 0.2094,
+    "p99_ms": 0.2842,
+    "max_ms": 0.73,
+    "target_p95_ms": 5.0,
+    "sla_passed": true
+  },
+  "memory_benchmark": {
+    "base_rss_mb": 18.52,
+    "final_rss_mb": 22.71,
+    "delta_rss_mb": 4.19,
+    "traced_peak_heap_mb": 3.52,
+    "target_max_rss_mb": 25.0,
+    "sla_passed": true
+  }
+}

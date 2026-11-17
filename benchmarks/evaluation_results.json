@@ -1,0 +1,120 @@
+{
+  "timestamp": "2026-11-09T21:29:53.000339",
+  "bootstrap_iterations": 1000,
+  "seed": 42,
+  "targets": {
+    "test_id": {
+      "span_f1": ">= 0.95",
+      "value_accuracy": ">= 0.95"
+    },
+    "test_ood": {
+      "span_f1": ">= 0.88",
+      "value_accuracy": ">= 0.85",
+      "point_exact_match": ">= 0.85",
+      "range_mean_iou": ">= 0.80"
+    }
+  },
+  "test_id_500": {
+    "split_name": "test_id_500",
+    "sample_count": 500,
+    "metrics": {
+      "span_f1": {
+        "point_estimate": 0.996,
+        "ci_95": [
+          0.99,
+          1.0
+        ],
+        "std_err": 0.0028
+      },
+      "value_accuracy": {
+        "point_estimate": 0.998,
+        "ci_95": [
+          0.994,
+          1.0
+        ],
+        "std_err": 0.002
+      },
+      "point_exact_match": {
+        "point_estimate": 0.9976,
+        "sample_count": 418,
+        "ci_95": [
+          0.9904,
+          1.0
+        ],
+        "std_err": 0.0025
+      },
+      "range_mean_iou": {
+        "point_estimate": 1.0,
+        "sample_count": 82,
+        "ci_95": [
+          1.0,
+          1.0
+        ],
+        "std_err": 0.0
+      }
+    },
+    "latency_ms": {
+      "mean": 0.1984,
+      "p50": 0.1359,
+      "p95": 0.2111,
+      "p99": 0.2635
+    },
+    "targets_met": {
+      "span_f1_ge_0_95": true,
+      "value_acc_ge_0_95": true
+    }
+  },
+  "test_ood_500": {
+    "split_name": "test_ood_500",
+    "sample_count": 500,
+    "metrics": {
+      "span_f1": {
+        "point_estimate": 0.9203,
+        "ci_95": [
+          0.8983,
+          0.9424
+        ],
+        "std_err": 0.0116
+      },
+      "value_accuracy": {
+        "point_estimate": 0.934,
+        "ci_95": [
+          0.914,
+          0.956
+        ],
+        "std_err": 0.0112
+      },
+      "point_exact_match": {
+        "point_estimate": 0.9441,
+        "sample_count": 429,
+        "ci_95": [
+          0.9207,
+          0.9628
+        ],
+        "std_err": 0.0109
+      },
+      "range_mean_iou": {
+        "point_estimate": 0.911,
+        "sample_count": 71,
+        "ci_95": [
+          0.8486,
+          0.9686
+        ],
+        "std_err": 0.0315
+      }
+    },
+    "latency_ms": {
+      "mean": 0.2014,
+      "p50": 0.1978,
+      "p95": 0.2974,
+      "p99": 0.3693
+    },
+    "targets_met": {
+      "span_f1_ge_0_88": true,
+      "value_acc_ge_0_85": true,
+      "point_em_ge_0_85": true,
+      "range_iou_ge_0_80": true
+    }
+  },
+  "overall_status": "PASS"
+}

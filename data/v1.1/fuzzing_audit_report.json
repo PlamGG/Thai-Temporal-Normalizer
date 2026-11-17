@@ -1,0 +1,134 @@
+{
+  "timestamp": "2026-11-08T20:25:47Z",
+  "splits": {
+    "train.jsonl": {
+      "actual_rows": 7000,
+      "expected_rows": 7000,
+      "matches_expected": true,
+      "size_bytes": 5817882,
+      "sha256": "fc1df01f95c3a86541e6de87a2186638b9d19321afc80c48febcf59618ee982a"
+    },
+    "dev.jsonl": {
+      "actual_rows": 1000,
+      "expected_rows": 1000,
+      "matches_expected": true,
+      "size_bytes": 828970,
+      "sha256": "1a83193ebd387ab140618eed52441a545e55b9284b3e590f987b4cb3f9185359"
+    },
+    "test_id.jsonl": {
+      "actual_rows": 1000,
+      "expected_rows": 1000,
+      "matches_expected": true,
+      "size_bytes": 837154,
+      "sha256": "62a5a30e19ace0ba23271aec8973000b9422b706e7599e80904bb8f1abc6346c"
+    },
+    "test_ood.jsonl": {
+      "actual_rows": 1000,
+      "expected_rows": 1000,
+      "matches_expected": true,
+      "size_bytes": 837168,
+      "sha256": "d3ca2d415160c858496161fb2d22b8b9e56ced5acdbab59d48e69eca9e74dd00"
+    }
+  },
+  "global_summary": {
+    "total_records": 10000,
+    "target_records": 10000
+  },
+  "span_offset_audit": {
+    "positive_rows_evaluated": 9000,
+    "negative_rows_evaluated": 1000,
+    "expected_positive_rows": 9000,
+    "expected_negative_rows": 1000,
+    "span_offset_mismatches_count": 0,
+    "span_offset_mismatches_samples": [],
+    "coordinate_violations_count": 0,
+    "coordinate_violations_samples": [],
+    "empty_spans_count": 0,
+    "unicode_nfc_non_compliant_count": 0,
+    "multi_occurrence_spans_count": 1,
+    "all_positive_exact_match": true
+  },
+  "deduplication_audit": {
+    "total_rows": 10000,
+    "unique_raw_inputs": 10000,
+    "raw_duplicates": 0,
+    "zero_raw_duplicates": true,
+    "unique_whitespace_normalized": 10000,
+    "unique_record_ids": 10000,
+    "zero_id_duplicates": true,
+    "within_split_duplicates": {
+      "train.jsonl": 0,
+      "dev.jsonl": 0,
+      "test_id.jsonl": 0,
+      "test_ood.jsonl": 0
+    },
+    "pairwise_split_overlaps": {
+      "train.jsonl ∩ dev.jsonl": 0,
+      "train.jsonl ∩ test_id.jsonl": 0,
+      "train.jsonl ∩ test_ood.jsonl": 0,
+      "dev.jsonl ∩ test_id.jsonl": 0,
+      "dev.jsonl ∩ test_ood.jsonl": 0,
+      "test_id.jsonl ∩ test_ood.jsonl": 0
+    },
+    "zero_pairwise_overlap": true
+  },
+  "length_bounds_audit": {
+    "bound_sla": 120,
+    "violations_over_120_count": 0,
+    "violations_samples": [],
+    "all_satisfy_sla_120": true,
+    "empty_strings_count": 0,
+    "min_len": 4,
+    "max_len": 111,
+    "mean_len": 56.15,
+    "median_len": 55.0,
+    "p90_len": 89,
+    "p95_len": 92,
+    "p99_len": 99,
+    "histogram": {
+      "0-20": 265,
+      "21-40": 2717,
+      "41-60": 3347,
+      "61-80": 1254,
+      "81-100": 2372,
+      "101-120": 45,
+      ">120": 0
+    }
+  },
+  "schema_audit": {
+    "missing_id_count": 0,
+    "missing_raw_input_count": 0,
+    "missing_metadata_count": 0,
+    "invalid_category_count": 0,
+    "schema_flawless": true
+  },
+  "checksum_audit": {
+    "manifest_path_exists": true,
+    "manifest_matches": true,
+    "details": {
+      "version": "th-temporal-v1.1.0",
+      "total_records": 10000,
+      "seed": 42,
+      "all_shas_match": true,
+      "mismatched_shas": []
+    }
+  },
+  "redos_stress_audit": {
+    "tested_records_count": 300,
+    "crashes_count": 0,
+    "crashes": [],
+    "min_latency_ms": 0.076,
+    "max_latency_ms": 1.196,
+    "mean_latency_ms": 0.364,
+    "p95_latency_ms": 0.795,
+    "all_under_50ms_sla": true
+  },
+  "verdict": "APPROVE",
+  "errors": [],
+  "negative_fp_audit": {
+    "total_negative_records": 1000,
+    "false_positive_count": 0,
+    "false_positives": [],
+    "zero_false_positives": true
+  }
+}

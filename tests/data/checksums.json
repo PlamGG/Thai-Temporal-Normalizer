@@ -1,0 +1,30 @@
+{
+  "dataset_name": "DuckerMaster/Thai-Natural-DateTime-Dataset",
+  "version": "th-temporal-v1.0.0-draft",
+  "license": "CC-BY-4.0",
+  "total_records": 3000,
+  "seed": 42,
+  "generation_timestamp": "2026-11-08T13:54:58.046639+00:00",
+  "files": {
+    "train_1500.jsonl": {
+      "records": 1500,
+      "sha256": "9f7e52cf17ce228f12c7ff0d4bf4531e9bb1db0eb678fa1d1bdccdc5fab88381",
+      "size_bytes": 946850
+    },
+    "dev_500.jsonl": {
+      "records": 500,
+      "sha256": "f4cf1b5ffa1cfe26f58c9285e2bfd65f20f89b1b5e7537f9d956eb8bab2b75ab",
+      "size_bytes": 313958
+    },
+    "test_id_500.jsonl": {
+      "records": 500,
+      "sha256": "4484ca4829941ff16da5c461c5b358ec286309d15fffc7211405854ae65c9c8e",
+      "size_bytes": 316816
+    },
+    "test_ood_500.jsonl": {
+      "records": 500,
+      "sha256": "44e6990c9f6e0ab0d96b695cf9ff5ad33a2466a94f3a1dd7d96d6e676ba1aad2",
+      "size_bytes": 335665
+    }
+  }
+}
